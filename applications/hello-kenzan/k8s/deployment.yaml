@@ -32,6 +32,7 @@ spec:
       containers:
       - image: 127.0.0.1:30400/hello-kenzan:$BUILD_TAG
         name: hello-kenzan
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
           name: hello-kenzan
